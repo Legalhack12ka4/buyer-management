@@ -1,0 +1,28 @@
+{
+  "buyers": [
+    {
+      "id": "5aa2",
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "address": "abc",
+      "mobile": "7878787878",
+      "buyingType": "Wholesale"
+    },
+    {
+      "id": "6cc0",
+      "name": "sdmsn",
+      "email": "mnmnb",
+      "address": "mnbmnb",
+      "mobile": "mnbmnb",
+      "buyingType": ""
+    },
+    {
+      "id": "641a",
+      "name": "nmdbfhdbs",
+      "email": "hvhggh@gmail.com",
+      "address": "dhfsdb",
+      "mobile": "8787878787",
+      "buyingType": "Wholesale"
+    }
+  ]
+}
