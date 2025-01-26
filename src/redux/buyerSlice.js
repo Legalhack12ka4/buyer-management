@@ -13,6 +13,12 @@ export const addBuyer = createAsyncThunk('buyers/addBuyer', async (buyer) => {
   return response.data;
 });
 
+export const deleteBuyer = createAsyncThunk('buyers/deleteBuyer', async (buyerId) => {
+  await axios.delete(`${API_URL}/${buyerId}`);
+  return buyerId; // Return the ID to update the Redux state
+});
+
+
 export const buyerSlice = createSlice({
   name: 'buyers',
   initialState: { data: [], status: 'idle' },
@@ -24,6 +30,9 @@ export const buyerSlice = createSlice({
       })
       .addCase(addBuyer.fulfilled, (state, action) => {
         state.data.push(action.payload);
+      })
+      .addCase(deleteBuyer.fulfilled, (state, action) => {
+        state.data = state.data.filter((buyer) => buyer.id !== action.payload);
       });
   },
 });

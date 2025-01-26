@@ -10,6 +10,7 @@ const AddBuyerForm = () => {
     name: "",
     email: "",
     address: "",
+    price: "",
     mobile: "",
     buyingType: "",
   });
@@ -26,7 +27,7 @@ const AddBuyerForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission behavior
     dispatch(addBuyer(formData)); // Dispatch Redux action to add buyer
-    setFormData({ name: "", email: "", address: "", mobile: "", buyingType: "" }); // Reset form
+    setFormData({ name: "", email: "", address: "", price: "", mobile: "", buyingType: "" }); // Reset form
   };
 
   return (
@@ -70,6 +71,15 @@ const AddBuyerForm = () => {
             placeholder="Enter buyer's mobile number"
             value={formData.mobile}
             onChange={(e) => handleChange("mobile", e.target.value)}
+            className="mt-1"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-medium">Price</label>
+          <Input
+            placeholder="Enter buyer's mobile number"
+            value={formData.price}
+            onChange={(e) => handleChange("price", e.target.value)}
             className="mt-1"
           />
         </div>

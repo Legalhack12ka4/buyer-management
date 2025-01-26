@@ -1,28 +1,40 @@
 {
   "buyers": [
     {
-      "id": "5aa2",
-      "name": "abc",
-      "email": "abc@gmail.com",
-      "address": "abc",
-      "mobile": "7878787878",
-      "buyingType": "Wholesale"
+      "id": "d3a4",
+      "name": "jhgjhgjh",
+      "email": "jhgjhgjhg",
+      "address": "jhgjhgjh",
+      "price": 241,
+      "mobile": "gjhgjhg",
+      "buyingType": "Wholesale",
+      "extraCharges": [
+        {
+          "description": "Extra Charge 1",
+          "amount": 20
+        },
+        {
+          "description": "Extra Charge 2",
+          "amount": 30
+        }
+      ],
+      "totalPrice": 241
     },
     {
-      "id": "6cc0",
-      "name": "sdmsn",
-      "email": "mnmnb",
-      "address": "mnbmnb",
-      "mobile": "mnbmnb",
-      "buyingType": ""
-    },
-    {
-      "id": "641a",
-      "name": "nmdbfhdbs",
-      "email": "hvhggh@gmail.com",
-      "address": "dhfsdb",
-      "mobile": "8787878787",
-      "buyingType": "Wholesale"
+      "id": "3cfd",
+      "name": "dbgfdsbh",
+      "email": "jhhjgjhg",
+      "address": "jhjhgjhg",
+      "price": 676,
+      "mobile": "jhgjhgjhg",
+      "buyingType": "Retail",
+      "extraCharges": [
+        {
+          "description": "Extra Charge 1",
+          "amount": 20
+        }
+      ],
+      "totalPrice": 676
     }
   ]
 }
